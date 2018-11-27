@@ -46,6 +46,20 @@ body {
 
 } 
 
+/* Create two columns that float next to eachother */
+.leftcolumn {
+    float: left;
+    width: 30%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+.rightcolumn {
+    float: right;
+    width: 70%;
+    margin-top: 6px;
+    padding: 20px;
+}
 /** define the dot between the words in header */
 .dot {
     height: 15px;
@@ -58,7 +72,7 @@ body {
 .smalldot{
 	 height: 8px;
     width: 8px;
-    background-color: #000080;
+    background-color: #800080;
     border-radius: 50%;
     display: inline-block;
 }
