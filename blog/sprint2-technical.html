@@ -1,0 +1,65 @@
+What are best practices associated with using classes vs ids?
+---
+We need ways to describe content in a HTML document. The basic elements like <h1>, <p>, and <ul> will often do the job, but our basic set of tags doesn't cover every possible type of page element or layout choice. For this we need ID's and Classes. 
+
+So what is the difference between class and id?
+
+## ID's are unique
+
+Each element can have only one ID
+
+Each page can have only one element with that ID, For example <ul id="nav">, this will give us the chance to target this unordered list specifically, so that we may manipulate it uniquely to other unordered lists on our page.
+	
+	in your css file - I defined an id named nav
+	/**remove the bullet button for that perticular unordered list*/
+	#nav{
+       list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+  
+   in my html file - I can apply this id to the particular ul I want it for
+   <ul id="nav">
+ 		<li>list1<li>
+ 		<li>list2</li>	
+   </ul>	
+
+ Or we might have a section on our page that has no relevant tag to signify it, for example a footer, where we might do something like this: <div id="footer">.
+ 	
+ 	in main.css - I defined an id named footer
+
+ /** define footer style */
+   #footer{
+   		padding: 10px;
+		text-align: centre;
+		background: #2F4F4F;
+		margin-top: 10px;
+		color: white;
+}
+  
+   in my html file - apply footer id to footer only
+
+   <div id="footer"> footer contents</div>
+ 
+## Classes are NOT unique
+You can use the same class on multiple elements.
+You can use multiple classes on the same element.
+Any styling information that needs to be applied to multiple objects on a page should be done with a class. Take for example a page with multiple "outline", which gives awesome outline effect to the text. 
+
+in my css file, I defined a class named outline,
+/** define the outline effect to text */
+
+.outline {
+	color: black;
+	text-shadow: 0px 0px 6px gold;
+	font-size: 60px;
+}
+
+in my html file, I can apply outline class as many times as you need to
+<div class="outline">outline text 1</div>
+<div class="outline">outline text 2</div>
+<div class="outline">outline text 3</div>
+
+outline class have been repeatly applied in my html file.
+
+Hope above examples explained the difference between classes and ids.
