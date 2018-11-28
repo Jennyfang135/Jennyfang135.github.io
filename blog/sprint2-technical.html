@@ -17,80 +17,95 @@
 
 		So what is the difference between class and id?</p>
 
- 		<h2><u>ID must be unique, id looks like #elementID</u></h2>
+ 		<h2><u>ID must be unique and it looks like #elementID</u></h2>
 
- 		<p>Each element can have only one ID<br>
-		Each page can have only one element with that ID, in general, use id whenever you want to refer to a specific element, for example &ltul id="noBullits"&gt, this will give us the chance to target this unordered list specifically, so that we may manipulate it uniquely to other unordered lists on our page.</p>
+ 		<p>Each element can have only one ID;<br>
+		Each page can have only one element with that ID, in general, use id whenever you want to refer to a specific element, for example &ltul id="noBullets"&gt, this will give us the chance to target this unordered list specifically, so that we may manipulate it uniquely to other unordered lists on our page.</p>
 	
-		<p>in my css file - I defined an id named nobullets<br>
+		<p>in a css file - define an id named nobullets<br>
+			
 			/**remove the bullet dots for that perticular unordered list*/<br>
+			<div class="codefontcolor">
 			#noBullets{ <br>
       		list-style-type: none;<br>
 			margin: 0;<br>
 			padding: 0;<br>
-		}</p>
+		}</div></p>
   
-   		</p>in my html file - I can apply this id to the particular ul I want it for<br>
+   		</p>in a html file -  apply this id to the particular ul<br>
+   			<div class="codefontcolor">
   		 	&ltul id="noBullets"&gt<br>
  				&ltli&gtlist1&ltli&gt<br>
  				&ltli&gtlist2&ltli&gt<br>
    			&lt/ul&gt	
+   			</div>
    		</p>	
  		<p>Or we might have a section on our page that has no relevant tag to signify it, for example a footer, where we might do something like this: &ltdiv id=“footer"&gt.<p>
  	
- 		<p>in main.css - I defined an id named footer<br>
-
+ 		<p>in a css file - define an ID named footer<br>
+ 			
  			/** define footer style */<br>
+ 			<div class="codefontcolor">
    			&#35footer{<br>
    			padding: 10px;<br>
 			text-align: centre;<br>
 			background: transparent;<br>
 			margin-top: 10px;<br>
-			color: white;<br>
-		}</p>
-		<p> in my html file - apply footer id to footer only<br>
-
-  		&ltdiv id="footer"&gt footer contents&lt/div&gt </p>
+			color: black;<br>
+			}
+			</div>
+		</p>
+		<p> in a html file - apply footer ID to Footer only<br>
+			<div class="codefontcolor">
+  				&ltdiv id="footer"&gt footer contents&lt/div&gt 
+  			</div>
+  	   	</p>
 
   
   		
 		<h2><u> Classes are NOT unique, class can be applied to many things, class elements looks like .className</u></h2>
-			<p>You can use the same class on multiple elements, in general you use class when you have 	a number o fthings that are all alike. <br>
+			<p>You can use the same class on multiple elements, in general you use class when you have 	a number of things that are all alike. <br>
 			<br>
 			For example a page with multiple "outline", which gives awesome outline effect to the text.
 			</p>
 
-			<p>in my css file, I defined a class named outline,</p>
-				<p>/** define the outline effect to text */<br>
-
+			<p>in a css file, define a class named outline,<br>
+				 /** define the outline effect to text */<br>
+					<div class="codefontcolor">
  					.outline { <br>
 					color: black;<br>
 					text-shadow: 0px 0px 6px gold;<br>
 					font-size: 60px;<br>
-				}</p>
+				   }
+			       </div>	    
 			</p>		
-			<p>in my html file, I can apply outline class as many times as you need to
-				<br>&ltdiv class="outline"&gt outline text 1 &lt/div&gt <br>
+			<p>in a html file, apply outline class as many times as needed<br>
+				<div class="codefontcolor">
+				&ltdiv class="outline"&gt outline text 1 &lt/div&gt <br>
 				&ltdiv class="outline"&gt outline text 2 &lt/div&gt <br>
 				&ltdiv class="outline"&gt outline text 3 &lt/div&gt 
+			</div>
 			</p>
 
-			<p>outline class have been repeatly applied in my html file.</p>
+			<p>outline class have been repeatly applied in this html file.</p>
 
 			<p>You can use multiple classes on the same element.<br>
 				for example
 
 				<p>/** define a green-background class */<br>
-
+					<div class="codefontcolor">
  					.green-background{ <br>
 						background-color: green; <br>
-				}</p>
+					}
+					</div>
+				</p>
 
-				<p>then I can apply class outline that I defined previously and class green-background on a same element;<br>
-				
+				<p>then I can apply class outline that I defined previously and class green-background on the same element;<br>
+				<div class="codefontcolor">
 				&ltdiv class="outline green-background"&gt 
 					contects here<br>
 					&lt/div&gt
+				</div>
 			    </p>		
 
 			<p>Hope above examples explained the difference between classes and ids.</p>

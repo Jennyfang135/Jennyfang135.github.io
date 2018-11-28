@@ -18,6 +18,9 @@ p {
 	font-size: 30px;
 	font-weight: bold;
 }
+.codefontcolor{
+	color: red;
+}
 a:link {
 	text-decoration: none;
 	font-weight: bolder;
