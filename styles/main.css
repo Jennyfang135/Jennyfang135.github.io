@@ -8,6 +8,28 @@ body {
 	padding: 20px;
 	font-size: 20px;
 	text-align: center;
+
+}
+p {
+	color: #2F4F4F;
+}
+a:link {
+	text-decoration: none;
+	font-weight: bolder;
+	color: blue;
+}
+
+a:hover {
+	color: red;
+	transform: scale(2);
+}
+/** define the text font for blog articles */
+.font4Tech {
+	font-family: Arial;
+	padding: 20px;
+	font-size: 20px;
+	text-align: left;
+	background-color: #FFE4B5;
 }
 
 /** define the style of the Blog's name */
@@ -31,7 +53,6 @@ body {
 	text-align: center;
 	width: 100%;
 	background-color:#C0C0C0;
-	
 }
 
 /** define the horizontal line effet */
@@ -70,19 +91,25 @@ body {
 }
 
 .smalldot{
-	 height: 8px;
+	height: 8px;
     width: 8px;
     background-color: #800080;
     border-radius: 50%;
     display: inline-block;
 }
-/** define the background colour */
+/** define the background colour as Lavander colour*/
 .bg {
-    background-color: #E6E6FA;
+    background: linear-gradient(35deg,#FFFAFA,#E6E6FA);
     background-size: cover;
 }
+/** define the background colour as silver colour*/
 
-/** take off the bullet point */
+.bggrey{
+	background-color: silver;
+	background-size: cover;
+}
+
+/** take off the bullet point  */
 ul{
 	list-style-type: none;
 	margin: 0;
@@ -106,7 +133,7 @@ ul{
 .alignRight {
 	text-align: right;
 }
-.footer {
+#footer {
 	padding: 10px;
 	text-align: centre;
 	background: #2F4F4F;
