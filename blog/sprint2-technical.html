@@ -1,66 +1,98 @@
-What are best practices associated with using classes vs ids?
----
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+		<title> Sprint2 Technical </title>
+	</head>
+	<body>
+		<div class="bggrey  h1">
+			What are best practices associated with using classes vs ids?
+	   	</div>
+		<hr class="hr">
+		<div class="font4Tech">
+		<p>We need ways to describe content in a HTML document. The basic elements like &lth1&gt, &ltp&gt, and &ltul&gt will often do the job, but our basic set of tags doesn't cover every possible type of page element or layout choice. For this we need ID's and Classes. <br>
 
-We need ways to describe content in a HTML document. The basic elements like h1, p, and ul will often do the job, but our basic set of tags doesn't cover every possible type of page element or layout choice. For this we need ID's and Classes. 
+		So what is the difference between class and id?</p>
 
-So what is the difference between class and id?
+ 		<h2><u>ID must be unique, id looks like #elementID</u></h2>
 
-## ID's are unique
-
-Each element can have only one ID
-
-Each page can have only one element with that ID, For example <ul id="nav">, this will give us the chance to target this unordered list specifically, so that we may manipulate it uniquely to other unordered lists on our page.
+ 		<p>Each element can have only one ID<br>
+		Each page can have only one element with that ID, in general, use id whenever you want to refer to a specific element, for example &ltul id="noBullits"&gt, this will give us the chance to target this unordered list specifically, so that we may manipulate it uniquely to other unordered lists on our page.</p>
 	
-	in your css file - I defined an id named nav
-	/**remove the bullet button for that perticular unordered list*/
-	#nav{
-       list-style-type: none;
-		margin: 0;
-		padding: 0;
-	}
+		<p>in my css file - I defined an id named nobullets<br>
+			/**remove the bullet dots for that perticular unordered list*/<br>
+			#noBullets{ <br>
+      		list-style-type: none;<br>
+			margin: 0;<br>
+			padding: 0;<br>
+		}</p>
   
-   in my html file - I can apply this id to the particular ul I want it for
-   <ul id="nav">
- 		<li>list1<li>
- 		<li>list2</li>	
-   </ul>	
-
- Or we might have a section on our page that has no relevant tag to signify it, for example a footer, where we might do something like this: <div id="footer">.
+   		</p>in my html file - I can apply this id to the particular ul I want it for<br>
+  		 	&ltul id="noBullets"&gt<br>
+ 				&ltli&gtlist1&ltli&gt<br>
+ 				&ltli&gtlist2&ltli&gt<br>
+   			&lt/ul&gt	
+   		</p>	
+ 		<p>Or we might have a section on our page that has no relevant tag to signify it, for example a footer, where we might do something like this: &ltdiv id=“footer"&gt.<p>
  	
- 	in main.css - I defined an id named footer
+ 		<p>in main.css - I defined an id named footer<br>
 
- /** define footer style */
-   #footer{
-   		padding: 10px;
-		text-align: centre;
-		background: #2F4F4F;
-		margin-top: 10px;
-		color: white;
-}
+ 			/** define footer style */<br>
+   			&#35footer{<br>
+   			padding: 10px;<br>
+			text-align: centre;<br>
+			background: transparent;<br>
+			margin-top: 10px;<br>
+			color: white;<br>
+		}</p>
+		<p> in my html file - apply footer id to footer only<br>
+
+  		&ltdiv id="footer"&gt footer contents&lt/div&gt </p>
+
   
-   in my html file - apply footer id to footer only
+  		
+		<h2><u> Classes are NOT unique, class can be applied to many things, class elements looks like .className</u></h2>
+			<p>You can use the same class on multiple elements, in general you use class when you have 	a number o fthings that are all alike. <br>
+			<br>
+			For example a page with multiple "outline", which gives awesome outline effect to the text.
+			</p>
 
-   <div id="footer"> footer contents</div>
- 
-## Classes are NOT unique
-You can use the same class on multiple elements.
-You can use multiple classes on the same element.
-Any styling information that needs to be applied to multiple objects on a page should be done with a class. Take for example a page with multiple "outline", which gives awesome outline effect to the text. 
+			<p>in my css file, I defined a class named outline,</p>
+				<p>/** define the outline effect to text */<br>
 
-in my css file, I defined a class named outline,
-/** define the outline effect to text */
+ 					.outline { <br>
+					color: black;<br>
+					text-shadow: 0px 0px 6px gold;<br>
+					font-size: 60px;<br>
+				}</p>
+			</p>		
+			<p>in my html file, I can apply outline class as many times as you need to
+				<br>&ltdiv class="outline"&gt outline text 1 &lt/div&gt <br>
+				&ltdiv class="outline"&gt outline text 2 &lt/div&gt <br>
+				&ltdiv class="outline"&gt outline text 3 &lt/div&gt 
+			</p>
 
-.outline {
-	color: black;
-	text-shadow: 0px 0px 6px gold;
-	font-size: 60px;
-}
+			<p>outline class have been repeatly applied in my html file.</p>
 
-in my html file, I can apply outline class as many times as you need to
-<div class="outline">outline text 1</div>
-<div class="outline">outline text 2</div>
-<div class="outline">outline text 3</div>
+			<p>You can use multiple classes on the same element.<br>
+				for example
 
-outline class have been repeatly applied in my html file.
+				<p>/** define a green-background class */<br>
 
-Hope above examples explained the difference between classes and ids.
+ 					.green-background{ <br>
+						background-color: green; <br>
+				}</p>
+
+				<p>then I can apply class outline that I defined previously and class green-background on a same element;<br>
+				
+				&ltdiv class="outline green-background"&gt 
+					contects here<br>
+					&lt/div&gt
+			    </p>		
+
+			<p>Hope above examples explained the difference between classes and ids.</p>
+		</body>
+</html>
