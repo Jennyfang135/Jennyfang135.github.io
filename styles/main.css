@@ -79,14 +79,14 @@ a:hover {
 /* Create two columns that float next to eachother */
 .leftcolumn {
     float: left;
-    width: 30%;
-    margin-top: 6px;
+    width: 12%;
+    margin-top: 20px;
     padding: 20px;
 }
 
 .rightcolumn {
     float: left;
-    width: 70%;
+    width: 88%;
     margin-top: 6px;
     padding: 20px;
 }
