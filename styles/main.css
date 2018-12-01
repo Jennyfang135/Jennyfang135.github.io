@@ -85,7 +85,7 @@ a:hover {
 }
 
 .rightcolumn {
-    float: right;
+    float: left;
     width: 70%;
     margin-top: 6px;
     padding: 20px;
