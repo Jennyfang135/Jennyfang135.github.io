@@ -21,10 +21,15 @@ p {
 	font-weight: bold;
 }
 
-.h3 {
+h3 {
 	font-size: 20px;
 	font-weight: bold;
 	color: red;
+}
+
+h4 {
+	font-size: 15px;
+	font-weight: bold;	
 }
 .codefontcolor{
 	color: red;
@@ -82,7 +87,17 @@ a:hover {
     border-width: 0.5px;
 
 } 
+.textCenter{
+	text-align: center;
+	
+}
 
+.imgCenter{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+}
 /* Create two columns that float next to eachother */
 .leftcolumn {
     float: left;
@@ -125,6 +140,9 @@ a:hover {
 	background-size: cover;
 }
 
+.fontGreen{
+    color: green;
+}
 /** take off the bullet point  */
 ul{
 	list-style-type: none;
