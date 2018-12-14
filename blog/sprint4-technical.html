@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog 4 Technical - Problem Solving</title>
+
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="../styles/main.css" rel="stylesheet type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="bggrey  h1">
+		<h2>Blog 4 Technical - Problem Solving </h2>
+				
+	</div>	
+	<hr class="hr">
+	<div class="font4Tech">
+		<a href="https://jennyfang135.github.io"> <button class="btn"><i class="fa fa-home"></i></button></a>
+		
+		<div class="dropdown">
+			<button class="btn"><i class="fa fa-bars"></i></button>	
+		 	<div class="dropdown-content">
+
+		 		<a href="https://jennyfang135.github.io/blog/sprint1-cultural.html"> Sprint 1 Cultural</a>
+
+		 		<a href="https://jennyfang135.github.io/blog/sprint1-technical.html"> Sprint 1 Technical</a>
+
+		  		> Sprint 2 Cultural</a>
+
+		  		<a href="https://jennyfang135.github.io/blog/sprint2-technical.html"> Sprint 2 Technical</a>
+
+		  		<a href="https://jennyfang135.github.io/blog/sprint3-cultural.html"> Sprint 3 Cultural</a>
+
+		  		<a href="https://jennyfang135.github.io/blog/sprint3-technical.html"> Sprint 3 Technical</a>	
+
+		  		<a href="https://jennyfang135.github.io/blog/sprint4-cultural.html"> Sprint 4 Cultural</a>
+
+		  		<a href="https://jennyfang135.github.io/blog/sprint4-technical.html"> Sprint 4 Technical</a>	
+
+		  		<a href="https://jennyfang135.github.io/blog/sprint5-cultural.html"> Sprint 5 Cultural</a>
+
+		  		<a href="https://jennyfang135.github.io/blog/sprint5-technical.html"> Sprint 5 Technical</a>	
+			</div>  
+		</div>		
+		<h3>Got blocked on a simple problem</h3>
+		<p>
+					
+			<h4>What was the problem?</h4>
+
+				<p>
+					I was stuck with a challenge question in Repl.it Olympic event 2 - "Reverse a String" for hours, I had all sorts of problems with this challenge, small or big, using different problem solving skills, I had them sorted out eventually.
+
+					The simple problem that I had with this challenge was I misuderstood the question. At the beginning I thought "String" in the question means only 1 word, like "Hello" or "world", when my original code failed the test, I realised that a String can be one word or mulitple words or sentences within the double quotes" ", like "Hello World!" or "I am going to school today."
+				</p>	
+
+			<h4>What problem solving techniques did you use?</h4>
+			<p>
+				I solved this problem by reading the error messages, the error messages gave me the enough hints to figure out what wrong was my code.
+			</p>
+					
+			<h4>How did you feel throughout the process?</h4>
+
+			<p>
+				I feel that debugging skills are so important and I need keeping on practicing them, to understand what the error messages mean, to put <strong>console.log </strong>in my code to test the output. 
+			</p>	
+			<h4>What did you learn?</h4>
+			<p>
+				- No rush to write code at the beginning<br>
+				- Understanding what the problem is and how I am going to solve it.
+				- Reading the tests code first(if they are provided) and find out what kind of tests my code need to pass<br>
+				
+
+			</p>
+		</p>
+		<h3>Solved a problem in an elegant way</h3>
+		<p>
+			<h4>What was the problem?</h4>
+				
+			<p>
+				The other problems I had with "Reverse a String" was how to reverse a String that has more than one word and space in between words? for example from "I am the master of the unjumble! Look at me go!" to "!og em ta kooL !elbmujnu eht fo retsam eht ma I"
+			</p>			    
+			
+			<h4>What problem solving techniques did you use?</h4>
+			<p>
+				<ol>
+					<li>
+						Using Google search to find out if there is a method that can reverse a string? like string.reverse(), unfortuantely there is not; however there is a reverse method for reversing an array, and an string.split() method which converts a string to array. Bingo!
+					</li>
+
+					<li>
+						write Pseudocode to plan how to solve the problem:
+						step 1- convert a string to an array by string.split();<br>
+						step 2 - reverse this array by method array.reverse() to create a reveresed array;<br>
+						step 3- convert each element in the reversed array by repeat step 2 and 3;<br>
+						step 4- convert the every element reversed array back to a String by method array.join()<br>
+					</li>
+
+					<li>
+						After all above steps done, I thought I successfully completed this challenge, but NO, I didn't. My test results failed!!! why? I was quite sure that my logic and the syntax of the code were right, so I used  <strong>console.log </strong> to print out the outputs on the screen, but the output from console.log looks like I got the right answers, but why I couldn't past the test?
+					</li>	 
+
+					<li>
+						The problem solving skill I used next was to read the error messages carefully again , then I realised that there was an extra " " at the beginning of my reversed string! For example if I inupt "Hi! Jenny", my expecting output should be "ynneJ !iH", but the actual output of my code was " ynneJ !iH". It was an extra " " that failed my test! It was so hard to notice that there was an extra space there!  Using a string.substring() method fixed this problem easily. Hooray, I past the challenge at last!
+					</li>	 
+				</ol>	
+			</p>
+			<h4>How did you feel throughout the process?</h4>
+			<p>			
+				I feel debugging is so time consuming and a little small bug can take hours to figure it out and get it fixed, so how to improve my problem solving skills and debugging effeciency are something that I need to work more on them.
+			</p>	
+			<h4>What did you learn?</h4>
+			<p>
+				- Analysing problems in a logic way<br>
+				- breaking a big problem into small problems<br>
+				- Writing pseudocodes<br>
+				- Using googles to help find the useful methods<br>
+				- Using <strong>console.log</strong> to print out the output<br>
+				- Understanding error messages and reading them carefully	<br>
+			</p>	
+		</p>	
+	</div>		
+</body>
+	<footer id="footer">
+		code resource: https://repl.it/@devacademy/JS-Olympics
+	</footer>
+</html>
