@@ -42,7 +42,7 @@ a:link {
 
 a:hover {
 	color: red;
-	transform: scale(1.5);
+	transform: scale(1.2);
 }
 /** define the text font for blog articles */
 .font4Tech {
